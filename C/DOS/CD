@@ -1,0 +1,18 @@
+
+local tArgs = { ... }
+if #tArgs < 1 then
+    print( _G.DRIVE .. ":\\" )
+    return
+end
+
+local sNewDir = shell.resolve( tArgs[1] )
+if fs.isDir( sNewDir ) then
+    if sNewDir ~= '' then
+        shell.setDir( sNewDir )
+    else
+        print('Not a directory')
+    end
+else
+    print( "Not a directory" )
+    return
+end

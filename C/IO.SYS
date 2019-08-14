@@ -1,0 +1,8 @@
+-- IO.SYS for CC-DOS --
+print('Starting CC-DOS...\n\n')
+
+shell.run('/C/DOS/HIMEM.SYS')
+
+shell.setPath('.:/C/DOS')
+
+shell.run('/C/CCDOS.SYS')

@@ -1,0 +1,19 @@
+--[[
+HIMEM.SYS was a device driver that allowed DOS to
+acces more than its default limit of 640K of RAM,
+up to 4GB on a 32-bit system, and was required for
+Windows 1 through 98 to run. Only the Intel 80286
+and above could easily access more than 1MB of RAM,
+though there was special hardware that enabled the
+8086 and 8088 to access more than 1MB.
+
+Before HIMEM.SYS, it was possible to (on an IBM-PC
+or compatible) raise memory to 1MB using an expan-
+sion card with bank switched memory.
+
+Credit to Wikipedia.
+]]--
+
+write('HIMEM is testing extended memory...')
+os.sleep(0.1)
+print('done.')

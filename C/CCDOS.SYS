@@ -1,0 +1,11 @@
+-- Systemfile for CC-DOS --
+
+shell.run('/C/AUTOEXEC.BAT')
+
+shell.setDir('/C')
+
+_G.DRIVE = 'C'
+
+term.setCursorBlink(false)
+
+shell.run('/C/COMMAND.COM')
