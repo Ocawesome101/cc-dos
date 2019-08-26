@@ -1,0 +1,10 @@
+-- MKDIR --
+
+local args = {...}
+
+if not args[1] then
+	print('Required parameter missing')
+	return
+end
+
+fs.makeDir(shell.resolve('.') .. args[1])
